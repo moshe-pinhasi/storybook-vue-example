@@ -1,28 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="Welcome to Your Storybook"/>
+
+    <MyButton text="test btn" type="ellipse"></MyButton>
+    <br />
+    <br />
+    <br />
+    <MyButton text="test btn" type="circle"></MyButton>
+    <br />
+    <br />
+    <br />
+    <MyButton text="test btn" type="disabled"></MyButton>
   </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
+import MyButton from "./components/MyButton";
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    HelloWorld,
+    MyButton
   }
 };
 </script>
-
-<style lang="scss">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
